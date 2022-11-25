@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo de consumo</title>
+</head>
+<body>
+    <h3>¿Alcohol o gasolina?</h3>
+    <script>
+        function saltarLinea(){
+            document.write("<br><br>");
+        }
+        //una funcion que trae un parametro y que adentro llama otra funcion
+        function escribir(frase){
+            document.write(frase);
+            saltarLinea();
+        }
+        var tanque=40;
+        var kilometros=480;
+        var saltoLinea="<br>";
+        saltarLinea();
+        document.write("la eficiencia del automovil con gasolina es:"+ kilometros/tanque);
+        document.write(saltoLinea);
+        kilometros=300;
+        document.write("la eficiencia del automovil con alcohol es:"+ kilometros/tanque);
+        saltarLinea();
+        escribir("es lo mismo pero creado por mi");
+        escribir("es lo mismo ");
+    </script>
+</body>
+</html>
